@@ -1,0 +1,122 @@
+.Send_card{
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    .Card_content{
+        width: 50%;
+        height:auto;
+        padding: 0 2rem;
+        display: inline-block;
+        border-radius: 10px ;
+        border:5px solid orange;
+    }
+    .subject{
+        width: 100%;
+        margin: 0 auto;
+        text-align: start;
+    }
+    
+    .Text_field{
+        width: 100%;
+    }
+    .To_div{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;  
+    }
+    .border_bottom{
+        height: 3rem;
+    }
+    .box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        overflow: hidden;
+        justify-content: space-between;
+        
+    }
+    .inner_box{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        border-radius: 5px;
+        border: 2px solid #FA9772;
+    }
+    .mini_img_logo{
+        width: 40px;
+        height: 40px;
+        border-radius: 40%;
+        border-radius: 80px;
+        margin-left: 2%;
+        // border: 1px solid red;
+      }
+      .selected_number{
+        font-size: 20px;
+        align-items: center;
+        margin-left: 2%;
+        text-align: center;
+        width: 20%;
+        height: 1.2rem;
+        border-radius: 3px;
+        border: 1px solid #FA9772;
+      }
+      .selected_email{
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        margin-left: 2%;
+        width: 22%;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid #FA9772;
+      }
+      .selected_location{
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        margin-left: 2%;
+        width: 32%;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid #FA9772;
+      }
+      .Gift_button{
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        // border: 1px solid red;
+    }
+    .Gift_text{
+        display: flex;
+        flex-direction: row;
+        height: 2.9rem;
+        width: 35%;
+        font-size: 32px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 10px;
+        border-color: #FA9772;
+        background-color: #fa9772;
+        
+    }
+    .gift_icon{
+        padding: 13px;
+        align-items: center;
+    }
+    .Next_button{
+        width: 70%;
+        background-color: #3F6161;
+        height: 3rem;
+        font-size: 33px;
+        color: white;
+        border-radius: 10px;
+        border-color: #161818;
+        margin-top: 7%;
+        margin-bottom: 0,5px;
+        // font-weight: bolder;
+    }
+}

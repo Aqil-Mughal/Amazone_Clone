@@ -1,0 +1,121 @@
+const [personInfo, setPersonInfo] = React.useState([
+{
+  name: 'MANi',
+  details: [
+    {
+      email: 'gmail',
+      checked: false,
+      icon:<AccessAlarmIcon/>
+    },
+    {
+      phone: '9374957932',
+      checked: false,
+    },
+    {
+      location: 'kjsadhhukfhas',
+      checked: false,
+    },
+  ],
+},
+{
+  name: 'AQIL',
+  details: [
+    {
+      email: 'kjsadhkfhas',
+      checked: false,
+    },
+    {
+      phone: 'kjsadhkfhas',
+      checked: false,
+    },
+    {
+      location: 'kjsadhkfhas',
+      checked: false,
+    },
+  ],
+},
+{
+  name: 'ADIL',
+  details: [
+    {
+      title: 'kjsadhkfhas',
+      checked: false,
+    },
+    {
+      title: 'kjsadhkfhas',
+      checked: false,
+    },
+    {
+      title: 'kjsadhkfhas',
+      checked: false,
+    },
+  ],
+},
+
+]);
+const handleChange=(index,i)=>{
+console.log(personInfo[index].details[i].checked )
+personInfo[index].details[i].checked = !personInfo[index].details[i].checked
+
+setPersonInfo([...personInfo])
+
+}
+console.log(personInfo)
+return (
+<div>
+  {personInfo?.map((item, index) => (
+    <Accordion key={index}>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+        <Typography>{item.name}</Typography>
+      </AccordionSummary>
+      {item.details.map((detail,i)=>(
+      <AccordionDetails key={i} style={{display:'flex'}}>
+        {/* {detail.icon} */}
+        <Typography>
+         {detail?.email}
+        </Typography>
+        <Typography>
+         {detail?.phone}
+        </Typography>
+        <Typography>
+         {detail?.location}
+        </Typography>
+
+        {/* <Checkbox
+
+checked={detail?.checked}
+onChange={()=>handleChange(index,i)}
+/> */}
+      </AccordionDetails>
+      ))}
+         <AccordionDetails >
+      </AccordionDetails>
+    </Accordion>
+  ))}
+
+
+  <div>
+    {
+      personInfo?.map((items,indexs)=>(
+        items?.details.map((item,index)=>(
+          item.checked ? 
+          <>
+        <p>
+          name: {items.name}
+        </p>
+        <p>
+          selected : {item.title}
+        </p>
+        </>
+        :null
+        ))
+      ))
+    }
+  </div>
+</div>
+);
+}
